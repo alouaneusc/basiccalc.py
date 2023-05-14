@@ -1,0 +1,57 @@
+"intro"
+
+print("Welcome to the Check calculator! ")
+name = input("What is your name? ")
+print("Hello " + name + " the calculations will soon begin. ")
+
+"learnearn or coprorate"
+
+q = input("Are you in Learn And Earn (LAE) or Coporate (CORP) ")
+
+if q == "LAE":
+    print("You are a Learn And Earn kid! ")
+    a = 7.25
+else:
+    print("You work for Coporate! ")
+    a = 10.35
+
+print("...")
+
+hours = int(input("How many hours did you work in the last 2 weeks? "))
+money = (hours*a)
+
+"fed taxes"
+tax_fed = float(money)*0.0783091787
+
+"ss taxes"
+tax_ss = float(money*.062)
+
+"med"
+tax_med = float(money*0.0144927536)
+
+"pa state"
+tax_pastate = float(money*0.03069)
+
+"whitehall boro"
+tax_whitehallboro = float(money*0.017)
+
+"pa sui"
+tax_pasui = float(money*0.000611916264)
+
+total_tax = tax_fed + tax_ss + tax_med + tax_pastate + tax_whitehallboro + tax_pasui
+
+net_pay = str(money - total_tax)
+print("calculating...")
+print(name + ", you have made" + net_pay+ " dollars")
+
+
+
+
+
+
+
+
+
+
+
+
